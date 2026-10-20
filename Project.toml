@@ -1,0 +1,50 @@
+name = "MuRAT"
+uuid = "5f0c2a9e-8f1d-4b7a-9c3e-2d6b1a4e7f10"
+version = "0.2.0"
+authors = ["Chiara Nardoni", "Luca De Siena"]
+
+[deps]
+DSP = "717857b8-e6f2-59f4-9121-6e50c889abd2"
+DelimitedFiles = "8bb1440f-4735-579b-a4ab-409b98df4dab"
+FFTW = "7a1cc6ca-52ef-59f5-83cd-3a7055c09341"
+JLD2 = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+MiniQhull = "978d7f02-9e05-4691-894f-ae31a51d76ca"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+WriteVTK = "64499a7a-5c06-52f2-abe2-ccb03c286192"
+
+[weakdeps]
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+MAT = "23992714-dd62-5051-b70f-ba57cb901cac"
+NCDatasets = "85f8d34a-cbdd-5861-8df4-14fed0d494ab"
+
+[extensions]
+MuratMakieExt = "CairoMakie"
+MuratMATExt = "MAT"
+MuratNCExt = "NCDatasets"
+
+[compat]
+CairoMakie = "0.15"
+DSP = "0.8.6"
+DelimitedFiles = "1"
+FFTW = "1.10.0"
+JLD2 = "0.6.7"
+MAT = "0.10, 0.11, 0.12"
+NCDatasets = "0.14"
+LinearAlgebra = "1"
+MiniQhull = "0.4.0"
+Printf = "1"
+Random = "1"
+SparseArrays = "1"
+Statistics = "1"
+WriteVTK = "1.22.0"
+julia = "1.10"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
